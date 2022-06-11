@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Mobile</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="divi">
+            <div class="mobi">
+                <h4>Reach me @</h4>
+                <h1>9 7 9 1 8 7 7 1 6 3</h1>
+            </div>  
+            <div class="bubbles">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+                <img src="CSS - My Site Images/bubble.png" alt="">
+
+            </div>
+        </div>
+        
+        
+    </body>
+    <style>
+        .divi{
+            background-image: url("CSS - My site Images/background.png");        
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .mobi{
+            color: #fbfcfd;
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+        h1{
+            font-size: 80px;
+            margin: 10px 0 30px;
+            line-height: 80px;
+            font-family: cursive;
+            color: aquamarine;
+            align-items: center;
+            
+        }
+        h4{
+            font-family: cursive;
+            color: cadetblue;
+        }
+        .bubbles img{
+            width: 50px;
+            animation: bubble 7s linear infinite;
+        }
+        .bubbles{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom: -70px;
+        }
+        @keyframes bubble{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            70%{
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+        }
+        .bubbles img:nth-child(1){
+            animation-delay: 2.5s;
+        }
+        .bubbles img:nth-child(2){
+            animation-delay: 1s;
+        }
+        .bubbles img:nth-child(3){
+            animation-delay: 3.2s;
+        }
+        .bubbles img:nth-child(4){
+            animation-delay: 5s;
+        }
+        .bubbles img:nth-child(5){
+            animation-delay: 1s;
+        }
+        .bubbles img:nth-child(6){
+            animation-delay: 2s;
+        }
+        .bubbles img:nth-child(7){
+            animation-delay: 4s;
+        }
+    </style>
